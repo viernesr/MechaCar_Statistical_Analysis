@@ -3,6 +3,7 @@
 ## Linear Regression to Predict MPG
 
 The resulting statistical summary leads to the image below:
+
 ![alt text](https://github.com/viernesr/MechaCar_Statistical_Analysis/blob/main/Resources/images/linear_regression_summary.PNG?raw=true)
 
 
@@ -23,9 +24,11 @@ The linear regression slope for this model is: mpg = 6.081×vehicle_length + 3.5
 The Suspension Coil dataset provided for the MechaCar contains the results of the weight capacities of multiple suspension coils from multiple production lots. This is to test and determine for consistency.
 
 Looking at all manufacturing lots:
+
 ![alt text](https://github.com/viernesr/MechaCar_Statistical_Analysis/blob/main/Resources/images/total_summary.PNG?raw=true)
 
 Looking at each manufacturing lot:
+
 ![alt text](https://github.com/viernesr/MechaCar_Statistical_Analysis/blob/main/Resources/images/lot_summary.PNG?raw=true)
 
 Based on the entire dataset, we see the variance of the PSI is 62.29, which meets the 100 PSI variance limit. Similarly, looking at Lots 1 and 2, they also meet the 100 PSI variance requirement, with significantly lower values of 0.98 and 7.47, respectively. However, Lot 3 has a much higher variance, exceeding the 100 PSI variance limit, with a value of 170.29, concluding that this lot does not meet the design specification.
@@ -39,11 +42,13 @@ To show a visualizaion of the summaries of each lot, a boxplot was created, show
 A t-test is performed on all lots and then each lot separately. This is to determine if there is a statistical difference between the mean of the provided sample dataset and a hypothesized dataset. Using the presumed mean 1500, here are the following results:
 
 The summary of the t-test results across all manufacturing lots:
+
 ![alt text](https://github.com/viernesr/MechaCar_Statistical_Analysis/blob/main/Resources/images/t-test_total.PNG?raw=true)
 
 The mean of the sample is 1498.78, which is the same value from the summary statistsics. However, the p-value is 0.06, which is higher than the assumed significance level, 0.05. This means that the null hypothesis can not be rejected, from the evidence above. It can be concluded that the total mean is statistically similar to the presumed mean of 1500.
 
 The summary of the t-test results for each manufacturing lot:
+
 ![alt text](https://github.com/viernesr/MechaCar_Statistical_Analysis/blob/main/Resources/images/t-test_lot.PNG?raw=true)
 
 1. Lot 1's mean is the exact value as the assumed mean, 1500, resulting the p-value have a value of 1. The null hypothesis cannot be rejected, showing there is no statistical difference from the presumed mean.
