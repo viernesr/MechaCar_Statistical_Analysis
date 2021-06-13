@@ -30,12 +30,12 @@ Suspension <- read.csv(file='./Resources/csv/Suspension_coil.csv',
 
 total_summary <- Suspension %>% summarize(Mean=mean(PSI),Median=(PSI), 
                                           Variance=var(PSI), SD=sd(PSI),
-                                          .groups = 'keep')
+                                          Num_Coil=n(), .groups = 'keep')
 
 lot_summary <- Suspension %>% group_by(Manufacturing_Lot) %>% 
                 summarize(Mean_PSI=mean(PSI), Median_PSI=median(PSI), 
                           Var_PSI=var(PSI), Std_Dev_PSI=sd(PSI), 
-                          .groups = 'keep')
+                          Num_Coil=n(), .groups = 'keep')
 
 # Displaying a box plot to provide a visualization of the above summaries
 
